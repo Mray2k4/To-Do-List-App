@@ -21,9 +21,9 @@ add.addEventListener('click', function(m) {
 
     let click = document.getElementById('click');
 click.addEventListener('change', function() {
-    let line = document.getElementById('reg');
+    let line = document.getElementById('ordered');
     if(click.checked) {
-       line.removeAttribute('disabled');
+       line.style.setProperty("text-decoration", "line-through");
     } else {
         line.setAttribute('disabled', 'disabled');
     }
