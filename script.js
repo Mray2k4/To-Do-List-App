@@ -20,6 +20,23 @@ add.addEventListener('click', function(m) {
     }
 
     let click = document.getElementById('click');
+    click.addEventListener('change', function() {
+        let line = document.getElementById('ordered');
+        const remove = document.createElement('button');
+        remove.setAttribute('id', 'delete');
+        remove.innerHTML = 'x';
+        list.appendChild(remove);
+        if(click.checked) {
+            line.style.textDecoration = 'line-through';
+        } else {
+            line.style.textDecoration = 'none';
+            line.removeChild('remove');
+        }
+    })
+
+
+    /*
+    let click = document.getElementById('click');
 click.addEventListener('change', function() {
     let line = document.getElementById('ordered');
     const remove = document.createElement('button');
@@ -32,6 +49,9 @@ click.addEventListener('change', function() {
         line.removeEventListener(click);
     }
 })
+*/
+   
+
     
     input.value = "";
 })
