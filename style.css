@@ -1,10 +1,14 @@
 body {
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
-.container ul {
+#ordered {
     list-style: none;
+   
 }
+
 
 li {
     display: inline;

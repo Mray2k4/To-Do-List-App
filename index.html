@@ -7,19 +7,19 @@
     <title>To Do List</title>
 </head>
 <body>
-    <h1 class="title">TO DO LIST</h1>
+    <h1 id="top" class="title">TO DO LIST</h1>
       <form>
         <label for="lists"><b>WHAT TO DO TODAY:</b></label>
         <br><br>
-        <input type="text" name="text" id="txt">
-        <button type="submit" id="btn">add</button>
-        <button type="submit" id="remove">delete</button>
+        <input type="text" class="words" name="text" id="txt">
+        <button type="submit" id="btn">Add</button>
         
         <div class="container">
-            <ul>
+            <ul class="list" id="ordered">
                 
             </ul>
         </div>
+        <input type="submit" value="Register" id="reg" disabled>
       </form>
 
     <script src="script.js"></script>
