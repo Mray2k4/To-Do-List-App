@@ -1,3 +1,21 @@
+const add = document.querySelector('#btn');
+add.addEventListener('click', makeList)
+
+function makeList(m) {
+  m.preventDefault();
+  const text = document.getElementById('order');
+  const list = document.createElement('span');
+  let inputText = document.getElementById('txt').value;
+  let node = document.createTextNode(inputText);
+  list.appendChild(node);
+  text.appendChild(list);
+}
+
+
+
+/* CHANGING CODE */
+
+/*
 const input = document.querySelector('#txt');
 const add = document.querySelector('#btn');
 const list = document.querySelector('.list');
@@ -8,15 +26,13 @@ add.addEventListener('click', function(m) {
         m.preventDefault();
         const myList = document.createElement('li');
         const check = document.createElement('input');
-        //const remove = document.createElement('button');
+        myList.setAttribute('id', 'myLi')
         check.setAttribute('type', 'checkbox');
         check.setAttribute('id', 'click');
-        //remove.setAttribute('id', 'delete');
         myList.innerHTML = input.value;
-        //remove.innerHTML = 'x'
         list.appendChild(check);
         list.appendChild(myList);
-        //list.appendChild(remove);
+        //document.getElementById('myLi').append(check);
     }
 
     let click = document.getElementById('click');
@@ -31,12 +47,14 @@ add.addEventListener('click', function(m) {
             line.style.textDecoration = 'line-through';
         } else {
             line.style.textDecoration = 'none';
-            line.removeChild('remove');
         }
     }
+ input.value = "";
+})
+*/
 
+    /* POSSIBLE DELETE
 
-    /*
     let click = document.getElementById('click');
 click.addEventListener('change', function() {
     let line = document.getElementById('ordered');
@@ -54,7 +72,3 @@ click.addEventListener('change', function() {
    
 
     
-    input.value = "";
-})
-
-
