@@ -20,19 +20,20 @@ add.addEventListener('click', function(m) {
     }
 
     let click = document.getElementById('click');
-    click.addEventListener('change', function() {
+    click.addEventListener('change', myChange)
+     function myChange() {
         let line = document.getElementById('ordered');
-        const remove = document.createElement('button');
-        remove.setAttribute('id', 'delete');
-        remove.innerHTML = 'x';
-        list.appendChild(remove);
         if(click.checked) {
+            const remove = document.createElement('button');
+            remove.setAttribute('id', 'delete');
+            remove.innerHTML = 'x';
+            list.appendChild(remove);
             line.style.textDecoration = 'line-through';
         } else {
             line.style.textDecoration = 'none';
             line.removeChild('remove');
         }
-    })
+    }
 
 
     /*
