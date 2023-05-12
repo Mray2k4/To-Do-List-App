@@ -1,18 +1,40 @@
 body {
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    width: 600px;
+  }
+  
+  ul li {
+    padding: 0 5px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+  }
+  
+  ul li span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    text-align: center;
+  }
+
+/*
+body {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-#ordered {
-    list-style: none;
-   
+
+span input {
+  display: block;
 }
 
-li {
-    display: inline;
+#click {
+  text-align: left;
 }
-
-span {
-    display: block;
-}
+*/
