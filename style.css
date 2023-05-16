@@ -1,72 +1,22 @@
 body {
-  display: block;
-  flex-direction: column;
   text-align: center;
 }
 
-li, .input{
+#click {
+  margin-left: 600px;
   float: left;
 }
 
-
-
-
-ul,
-.list {
-  margin: 15px 500px;
-  text-align: left;
-  
-}
-
-
-
 #remove {
   float: right;
-  margin-right: 600px
+}
+
+button {
+  text-align: right;
 }
 
 li {
   list-style: none;
+  margin: 10px;
+  width: 65%;
 }
-/*
-body {
-    text-align: center;
-  }
-  
-  ul {
-    list-style: none;
-    width: 600px;
-  }
-  
-  ul li {
-    padding: 0 5px;
-    position: relative;
-    cursor: pointer;
-    display: block;
-  }
-  
-  ul li span {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 400px;
-    text-align: center;
-
-  }
-
-
-body {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-
-span input {
-  display: block;
-}
-
-#click {
-  text-align: left;
-}
-*/
