@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,21 +7,25 @@
   <link rel="stylesheet" href="style.css">
   <title>To Do List</title>
 </head>
-<body>
-  <h1>To Do List</h1>
-  <form>
-    <input type="text" name="text" id="txt" required>
-    <button type="Submit" class="btn">Add
-    </button>
-    <div class="list">
-      <ul>
-        
-      </ul>
-    </div>
-  </form>
 
+<body>
+  <h1 id="top" class="title">TO DO LIST</h1>
+  <form>
+    <div>
+      <label for="lists"><b>WHAT TO DO TODAY:</b></label>
+      <br><br>
+      <input type="text" class="words" name="text" id="txt" required>
+      <button type="submit" id="btn">Add</button>
+
+      <ulclass="list" id="order">
+        </ul>
+
+    </div>
+
+  </form>
   <script src="script.js"></script>
 </body>
+
 </html>
 
 <!--

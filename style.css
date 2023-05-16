@@ -1,4 +1,35 @@
 body {
+  display: block;
+  flex-direction: column;
+  text-align: center;
+}
+
+li, .input{
+  float: left;
+}
+
+
+
+
+ul,
+.list {
+  margin: 15px 500px;
+  text-align: left;
+  
+}
+
+
+
+#remove {
+  float: right;
+  margin-right: 600px
+}
+
+li {
+  list-style: none;
+}
+/*
+body {
     text-align: center;
   }
   
@@ -20,9 +51,10 @@ body {
     right: 0;
     width: 400px;
     text-align: center;
+
   }
 
-/*
+
 body {
     display: flex;
     flex-direction: column;

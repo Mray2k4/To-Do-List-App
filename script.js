@@ -1,3 +1,50 @@
+const myLi = document.querySelector("#order");
+const inputText = document.querySelector("#txt");
+const addItems = document.querySelector("#btn");
+
+addItems.onclick = function (m) {
+  let newInput = inputText.value;
+  inputText.value = '';
+  m.preventDefault();
+  
+  const check = document.createElement("input");
+  const list = document.createElement("li");
+  const text = document.createElement("span");
+  const btn = document.createElement("button");
+  
+  
+  check.setAttribute("type", "checkbox");
+  check.setAttribute("id", "click");
+  list.appendChild(check);
+  
+  list.appendChild(text);
+  text.textContent = newInput;
+  
+  //btn.setAttribute('id', 'remove');
+  //list.appendChild(btn);
+  //btn.textContent = 'x';
+  
+  myLi.appendChild(list);
+  
+  btn.onclick = function() {
+      myLi.removeChild(list);
+    }
+  
+  check.onclick = function() {
+    if(check.checked == true) {
+      btn.setAttribute('id', 'remove');
+      list.appendChild(btn);
+      btn.textContent = 'x';
+      text.style.textDecoration = "line-through";
+  } else if(check.checked == false) {
+      text.style.textDecoration = "none";
+      btn.remove();
+    }
+  }
+}
+/* Old Code */
+
+/*
 const inputText = document.querySelector('#txt');
 const button = document.querySelector('.btn');
 const list = document.querySelector('.list ul');
@@ -23,6 +70,8 @@ button.addEventListener('click', (m) => {
   }
   inputText.value = "";
 });
+*/
+
 /* CODE ON HOLD */
 /*
 const text = document.getElementById('order');
